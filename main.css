@@ -1,0 +1,15 @@
+.bg-darkpurple {
+    background-color: var(--darkpurple);
+}
+.bg-cadetgray {
+    background-color: var(--cadetgray);
+}
+.bg-englishviolet {
+    background-color: var(--englishviolet);
+}
+.bg-columbiablue {
+    background-color: var(--columbiablue);
+}
+.bg-chineseviolet {
+    background-color: var(--chineseviolet);
+}

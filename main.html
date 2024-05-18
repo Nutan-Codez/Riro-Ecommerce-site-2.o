@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="input.css">
+    <style>
+        /* Style to cover the entire viewport */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Put the video behind other content */
+            object-fit: cover; /* Cover the entire viewport */
+        }
+
+        /* Style for hidden text */
+        .hidden {
+            display: none;
+        }
+/* 	    color change animation */
+	    .colorchange {  
+  animation-name:colorchange;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ 
+}
+.colorchange:hover {  
+  animation: none;
+}
+@keyframes colorchange {
+  0% { color:#ff80b5;}
+  25% { color:#c880ff;}
+  50% { color:#60c7da;}
+  75% { color:#c880ff;}
+  100%{ color:#ff80b5;}
+    
+}
+
+
+#textContent p{
+            font-family:"Dancing Script";
+            font-weight: 700; 
+        }
+    </style>
+    
+    
+
+    
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="backgroundVideo" autoplay loop muted class="fixed inset-0 w-full h-full object-cover z-0">
+        <source src="https://res.cloudinary.com/dxjpfuobi/video/upload/v1708763080/RIRO_ad_campaign_compressed_wmhaea.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <header class="absolute inset-x-0 top-0 z-50">
+                <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    
+                    <!-- Logo -->
+                    <div class="flex lg:flex-1">
+                        <a href="main.html" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-20 w-20 " src="image/Riro.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="flex lg:hidden" onclick="mobNavHandler()">
+                        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" >
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- About, Contact, Chat, Login -->
+                    <div class="hidden lg:flex lg:gap-x-12" >
+                        <a href="about.html" target="_blank" class="relative rounded-full px-3 py-1 text-sm leading-6 text-black-600 ring-1 ring-violet-100/10 hover:ring-purple-900 font-semibold leading-6 text-cadetgray-300">About Us</a>
+                        <a href="contact.html" target="_blank" class="relative rounded-full px-3 py-1 text-sm leading-6 text-black-600 ring-1 ring-violet-100/10 hover:ring-purple-900 font-semibold leading-6 text-cadetgray-300">Contact Us</a>
+                    </div>
+                    <div class="hidden mx-2 lg:flex lg:flex-1 lg:justify-end" id="mobileNav2">
+                        <a href="#" class="rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-800/100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600" onclick="loginClicked()">Log in <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </nav> 
+                <!-- login box -->
+                <div id="loginbox" class="bg-purple-100 max-w-sm mx-auto rounded-md hidden">
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"onclick="loginRemoved()">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    <div class="flex min-h-full flex-col justify-center px-6 py-5 lg:px-8">
+                        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                          <h2 class="mt-5 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Log in to your account</h2>
+                        </div>
+                        
+                        <div class="mt-5 sm:mx-auto sm:w-full sm:max-w-sm">
+                          <form class="space-y-6" action="#" method="POST">
+                            <div>
+                              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                              <div class="mt-2">
+                                <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-outset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-outset focus:ring-violet-600 sm:text-sm sm:leading-6">
+                              </div>
+                            </div>
+                      
+                            <div>
+                              <div class="flex items-center justify-between">
+                                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                                <div class="text-sm">
+                                  <a href="#" class="font-semibold text-violet-600 hover:text-violet-500">Forgot password?</a>
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-outset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-outset focus:ring-violet-600 sm:text-sm sm:leading-6">
+                              </div>
+                            </div>
+                      
+                            <div>
+                              <button type="submit" class="flex w-full justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sign in</button>
+                            </div>
+                          </form>
+                      
+                          <p class="mt-10 text-center text-sm text-gray-500">
+                            Not a member?
+                            <a hraef="#" class="font-semibold leading-6 text-violet-600 hover:text-violet-500">Register Now</a>
+                          </p>
+                        </div>
+
+                </div>
+                
+                <div  class="hidden">
+                    
+                    <div class="fixed inset-0 z-50"></div>
+                    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-violet-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img class="h-8 w-auto" id="logo" src="/image/Riro.png" alt="">
+                            </a>
+                            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" >
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div> 
+    
+                        <div class="mt-6 flow-root"  >
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-gray-50">About Us</a>
+                                    <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-400 hover:bg-gray-50">Contact Us</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-purple-400 hover:bg-gray-50" onclick="loginClicked()">Log in</a>
+                                </div>
+                            </div>
+                        </div> 
+                     </div>
+                </div> 
+    
+            </header>
+            
+        </header>
+        <div class="relative isolate px-6 pt-40 lg:px-8">
+            <div id="backColor" class="hidden absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+				<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+			</div>
+            
+            <div>
+                <div id="textContent" class="text-center hidden">
+                      <img src="image/backindex.png" alt="" class="brighteness-200 absolute inset-0 -z-10 h-[100vh]  w-full brightness-120 object-cover object-right md:object-center">
+                    <h1 class=" p-8 font-bold tracking-tight text-purple-900 sm:text-6xl">Welcome to <span class="colorchange text-6xl block sm:inline"> RIRO </span></h1>
+                </div>
+                
+                <div class="mt-40 sm:mt-40 flex items-center justify-center gap-x-6 hidden" id="newcollection" >
+                    <a href="index.html" target="_blank" class="rounded-full bg-purple-500 px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-900">RIRO's Originals</a>
+                    <div class="hidden sm:mb-8 sm:flex sm:justify-center mt-7">
+                        <div  class="relative rounded-full px-3  py-2 text-sm leading-6 text-purple-800 ring-1 ring-purple-100/10 hover:ring-purple-100">
+                            <a href="read-blog.html" target="_blank" class="font-semibold text-purple-800 py-2"><span class="absolute inset-0" aria-hidden="true"></span>Read Blogs<span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // login box javascript
+        const textextra = document.getElementById("textContent");
+        function loginClicked() {
+          document.getElementById("loginbox").classList.remove("hidden");
+          textextra.style.visibility="hidden"
+          console.log('Login button clicked');
+          // add login form on page
+        }
+        function loginRemoved() {
+          document.getElementById("loginbox").classList.add("hidden");
+          console.log('Login closed');
+          textextra.style.visibility="visible"
+          // removes login form from page
+        }
+    </script>
+    <script>
+        // JavaScript code to hide video and display text content when the video ends
+        const video = document.getElementById("backgroundVideo");
+        const textContent = document.getElementById("textContent");
+        const backcolor= document.getElementById("backColor");
+        const newText= document.getElementById("newcollection");
+
+        // Hide the video and display the text content
+        function hideVideoShowText() {
+            video.style.display = "none";
+            textContent.classList.remove("hidden");
+            newText.classList.remove("hidden");
+            document.getElementById("newcollection").style.marginTop = '50px';
+            backcolor.classList.remove("hidden");
+
+            document.getElementById("logo").add("brightness-50");
+        }
+
+        // Event listener for when the video ends
+        video.addEventListener("ended", function() {
+            hideVideoShowText();
+        });
+
+        // Event listener for when the user interacts with the page (e.g., clicks)
+        document.addEventListener("click", function() {
+            hideVideoShowText();
+            
+        });
+        var x=true;
+        function mobNavHandler(){
+            if(x){
+                x=false;
+            document.getElementById('mobileNav2').classList.remove('hidden');}
+            else{
+                x=true;
+            document.getElementById('mobileNav2').classList.add('hidden'); 
+            }
+            
+        }
+    </script>
+</body>
+</html>

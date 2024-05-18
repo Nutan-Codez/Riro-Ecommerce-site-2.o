@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>RIRO Originals</title>
+    <!-- fonts -->
+    <!-- sacramento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- satisfy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container nav_container">
+            <a href="/main.html" class="nav_logo"><img src="image/Riro.png" alt="RIRO"></a>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="contact.html" class="nav_link">Contact</a></li>
+                <li class="nav_item">
+                    <a href="/read-blog.html" class="nav_link">Blog</a>
+                </li>
+            </ul>
+            <div class="nav_items">
+                <form action="#" class="nav_form">
+                    <input type="text" class="nav_input" placeholder="search here...." />
+                    <img src="./image/search.png" alt="" class="nav_search" />
+                </form>
+                <a href="/cart.html">
+                    <img src="./image/cart.png" alt="" class="nav_cart" />
+                </a>
+            </div>
+            <span class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </span>
+        </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+        <ul class="mobile_nav_list">
+            <li class="mobile_nav_item">
+                <a href="/" class="mobile_nav_link">Home</a>
+            </li>
+            <li class="mobile_nav_item">
+                <a href="/about.html" class="mobile_nav_link">About</a>
+            </li>
+            <li class="mobile_nav_item">
+                <a href="/contact.html" class="mobile_nav_link">Contact</a>
+            </li>
+            <li class="mobile_nav_item">
+                <a href="/cart.html" class="mobile_nav_link">Cart</a>
+            </li>
+        </ul>
+    </nav>
+    
+<!-- new  -->
+    <section class="section" id="explorer">
+        <div class="container">
+            <div class="section_category">
+                <p class="section_category_p">New  launching in</p>
+                <p id="demo"></p>
+            </div>
+            <div class="section_header">
+                <h3 class="section_title">EXPLORER</h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/12.12.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Stunner</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="1" data-title="Stunner"
+                                    data-image="./image/products/12.12.jpg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/12.7.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ensemble</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="2" data-title="Ensemble"
+                                    data-image="./image/products/12.7.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/12.1.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Trending Attire</h3>
+                                <p class="card_price">$90</p>
+
+                                <button class="add_to_cart" data-id="3" data-title="Trending Attire"
+                                    data-image="./image/products/12.1.jpg" data-price="90">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/10.8.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Showstopper</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="4" data-title="Showstopper"
+                                    data-image="./image/products/10.8.jpg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/8.6.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Dazzling Attire</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="5" data-title="Dazzling Attire"
+                                    data-image="./image/products/8.6.jpg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/12.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Statement Piece</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="6" data-title="Statement Piece"
+                                    data-image="./image/products/12.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- collections -->
+    <section class="section" >
+        <div class="container">
+            <div class="section_category">
+                <p class="section_category_p">ALL collections</p>
+            </div>
+            <div class="section_header">
+                <h3 class="section_title">Browse by collections</h3>
+            </div>
+            <div class="categories">
+                <a href="#opal">
+                    <div class="category" style="background-image: url('./image/gems/opal.jpeg');">
+                        <p class="category_name">Opal</p>
+                    </div>
+                </a>
+                <a href="#midnights">
+                    <div class="category" style="background-image: url('./image/gems/diamond.jpeg');">
+                        
+                        <p class="category_name">Midnights</p>
+                    </div>
+                </a>
+                <a href="#vigilante">
+                    <div class="category" style="background-image: url('./image/gems/ruby.jpeg');">
+                        
+                        <p class="category_name">Vigilante</p>
+                    </div>
+                </a>
+                <a href="#folklore">
+                    <div class="category" style="background-image: url('./image/gems/aquamarine.jpeg');">
+                    
+                        <p class="category_name">Folklore</p>
+                    </div>
+                </a>
+                <a href="#ecstasy">
+                    <div class="category" style="background-image: url('./image/gems/moonstone.jpeg');">
+                        
+                        <p class="category_name">Ecstasy</p>
+                    </div>
+                </a>
+                <a href="#explorer">
+                    <div class="category" style="background-image: url('./image/gems/azurite.jpeg');">
+                        
+                        <p class="category_name">Explorer</p>
+                    </div>
+                </a>
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- big banner -->
+    <section class="section">
+        <div class="container" >
+            <div class="trending">
+                <div class="trending_content" style="background-image: url('\image\products\bigcover.jpeg');">
+                    <p class="trending_p">Whimsical and delicate </p>
+                    <h2 class="trending_title">Folklore</h2>
+                    
+                    <a href="#" class="trending_btn">Explore Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Midnights -->
+    <section class="section" id="midnights">
+        <div class="container">
+           
+            <div class="section_header">
+                <h3 class="section_title">Midnights </h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.1.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="7" data-title="Midnights Dress"
+                                    data-image="./image/products/15.1.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.3.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="8" data-title="Midnights Dress"
+                                    data-image="./image/products/15.3.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.4.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="9" data-title="Midnights Dress"
+                                    data-image="./image/products/15.4.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.5.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="10" data-title="Midnights Dress"
+                                    data-image="./image/products/15.5.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.6.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="11" data-title="Midnights Dress"
+                                    data-image="./image/products/15.6.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/15.2.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Midnights Dress</h3>
+                                <p class="card_price">$120</p>
+
+                                <button class="add_to_cart" data-id="12" data-title="Midnights Dress"
+                                    data-image="./image/products/15.2.jpeg" data-price="120">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Vigilante -->
+    <section class="section" id="vigilante">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_title">Vigilante </h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/ub8.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="13" data-title="Vigilante Dress"
+                                    data-image="./image/products/ub8.jpeg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/ub6.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="14" data-title="Vigilante Dress"
+                                    data-image="./image/products/ub6.jpeg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/ub5.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="15" data-title="Vigilante Dress"
+                                    data-image="./image/products/ub5.jpeg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/ub2.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="16" data-title="Vigilante Dress"
+                                    data-image="./image/products/ub2.jpeg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/10.17.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="17" data-title="Vigilante Dress"
+                                    data-image="./image/products/10.17.jpg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/ub1.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Vigilante Dress</h3>
+                                <p class="card_price">$100</p>
+
+                                <button class="add_to_cart" data-id="18" data-title="Vigilante Dress"
+                                    data-image="./image/products/ub1.jpeg" data-price="100">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Folklore -->
+    <section class="section" id="folklore">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_title">Folklore </h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/8.3.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="19" data-title="Folklore Dress"
+                                    data-image="./image/products/8.3.jpg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/nature1.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="20" data-title="Folklore Dress"
+                                    data-image="./image/products/nature1.jpeg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/nature5.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="21" data-title="Folklore Dress"
+                                    data-image="./image/products/nature5.jpeg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/nature2.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="22" data-title="Folklore Dress"
+                                    data-image="./image/products/nature2.jpeg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/naturex.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="23" data-title="Folklore Dress"
+                                    data-image="./image/products/naturex.jpeg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/nature4.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Folklore Dress</h3>
+                                <p class="card_price">$130</p>
+
+                                <button class="add_to_cart" data-id="24" data-title="Folklore Dress"
+                                    data-image="./image/products/nature4.jpeg" data-price="130">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Opal -->
+    <section class="section" id="opal">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_title">Opal </h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.5.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="25" data-title="Opal Dress"
+                                    data-image="./image/products/2.5.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.6.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="26" data-title="Opal Dress"
+                                    data-image="./image/products/2.6.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.7.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="27" data-title="Opal Dress"
+                                    data-image="./image/products/2.10.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.10.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="28" data-title="Opal Dress"
+                                    data-image="./image/products/item-2.png" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.11.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="29" data-title="Opal Dress"
+                                    data-image="./image/products/2.11.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/2.12.jpg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Opal Dress</h3>
+                                <p class="card_price">$110</p>
+
+                                <button class="add_to_cart" data-id="30" data-title="Opal Dress"
+                                    data-image="./image/products/2.12.jpg" data-price="110">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Ecstasy -->
+    <section class="section" id="ecstasy">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_title">Ecstasy </h3>
+
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/m1.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="31" data-title="Ecstasy Dress"
+                                    data-image="./image/products/m1.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/m2.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="32" data-title="Ecstasy Dress"
+                                    data-image="./image/products/m2.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/m3.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="33" data-title="Ecstasy Dress"
+                                    data-image="./image/products/m3.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/m4.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="34" data-title="Ecstasy Dress"
+                                    data-image="./image/products/m4.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/m5.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="35" data-title="Ecstasy Dress"
+                                    data-image="./image/products/m5.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card_top">
+                                <img src="./image/products/nature7.jpeg" alt="" class="card_img" />
+
+
+                            </div>
+                            <div class="card_body">
+                                <h3 class="card_title">Ecstasy Dress</h3>
+                                <p class="card_price">$115</p>
+
+                                <button class="add_to_cart" data-id="36" data-title="Ecstasy Dress"
+                                    data-image="./image/products/nature7.jpeg" data-price="115">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Banners -->
+    <section class="section">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_title">Promotions</h3>
+            </div>
+            <div class="gallery">
+                <div class="gallery_item gallery_item_1">
+                    <img src="./image/products/natureparadecover.jpeg" alt="" class="gallery_item_img" />
+                    <div class="gallery_item_content">
+                        <div class="gallery_item_title">Paris Fashion Week</div>
+                        <p class="gallery_item_p">
+                            Eiffel Tower, 7 PM, 18th June 24
+                        </p>
+                        <a href="#" class="gallery_item_link">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="gallery_item gallery_item_2">
+                    <img src="./image/products/m3.2.jpeg" alt="" class="gallery_item_img" />
+                    <div class="gallery_item_content">
+                        <div class="gallery_item_title">New York Fashion Week</div>
+                        <p class="gallery_item_p">
+                            Central Park, 7 PM, 20th June 24.
+                        </p>
+                        <a href="#" class="gallery_item_link">BOOK NOW</a>
+                    </div>
+                </div>
+                <div class="gallery_item gallery_item_3">
+                    <img src=".\image\products\2.1.jpg" alt="" class="gallery_item_img" />
+                    <div class="gallery_item_content">
+                        <div class="gallery_item_title">Claudia Charity Event</div>
+                        <p class="gallery_item_p">
+                            Vancouver, 11 AM, 25th June 24
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery_item gallery_item_4">
+                    <img src="./image/products/12.5.jpg" alt="" class="gallery_item_img" />
+                    <div class="gallery_item_content">
+                        <div class="gallery_item_title">New  Launch Party</div>
+                        <p class="gallery_item_p">
+                            May hall, Tokyo, 2 PM, 28th June 24
+                        </p>
+                        <a href="#" class="gallery_item_link">APPLY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_item">
+                <a href="#" class="footer_logo">RIRO</a>
+                <div class="footer_p">
+                    Luxury Fashion Brand that makes every garment one of its own.
+                </div>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_titl">Main Office</h3>
+                <ul class="footer_list">
+                    <li class="li footer_list_item">Stockholm, Sweden</li>
+                    <li class="li footer_list_item">email@gmail.com</li>
+                    <li class="li footer_list_item">+46 123 456 78</li>
+                    <li class="li footer_list_item">+46 72 345 67</li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_titl">Other Stores</h3>
+                <ul class="footer_list">
+                    <li class="li footer_list_item">Paris</li>
+                    <li class="li footer_list_item">London</li>
+                    <li class="li footer_list_item">Cambridge</li>
+                    <li class="li footer_list_item">Seoul</li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h3 class="footer_item_titl">Support</h3>
+                <ul class="footer_list">
+                    <li class="li footer_list_item">Privacy policy</li>
+                    <li class="li footer_list_item">Terms of use</li>
+                    <li class="li footer_list_item">FAQ's</li>
+                    <li class="li footer_list_item">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container footer_bottom_container">
+                <p class="footer_copy">
+                    Copyright Exclusive 2023. All right reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
