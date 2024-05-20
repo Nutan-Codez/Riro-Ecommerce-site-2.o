@@ -250,7 +250,7 @@ ul {
 /* trending */
 .trending {
   height: 600px;
-  background-image: url('/image/products/bigcover.jpeg');
+  background-image: url('image/products/bigcover.jpeg');
   background-size:cover;
   padding: 8rem 4rem;
   width: 100%;
